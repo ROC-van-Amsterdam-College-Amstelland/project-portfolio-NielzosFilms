@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+body {
+    background-color: #57295e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    color: #dd00ff;
+    text-align: center;
+}
+
+.company_name {
+    padding: 10px;
+}
+
+.menu {
+    list-style-type: none;
+    background-color: white;
+    display: block;
+}
+.menu li{
+    float: left;
+}
+.menu li a{
+    display: inline-block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    background-color: white;
+}
+.menu li a:hover{
+    background-color: #724f83;
+}
+.menu_container {
+    background-color: white;
+}
