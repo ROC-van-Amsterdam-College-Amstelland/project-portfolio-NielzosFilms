@@ -7,6 +7,11 @@
 }
 
 body {
+    background-image: url("../img/background.png");
+    min-width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: #57295e;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -14,18 +19,27 @@ body {
 header {
     width: 100%;
     background-color: white;
-    color: #dd00ff;
-    text-align: center;
+}
+.logo {
+    position: absolute;
+    height: 57px;
+    top: 0;
+    left: 0;
 }
 
 .company_name {
     padding: 10px;
+    color: #dd00ff;
+    text-align: center;
 }
 
 .menu {
     list-style-type: none;
     background-color: white;
     display: block;
+}
+.menu-container {
+    box-shadow: 0px 5px 5px black;
 }
 .menu li{
     float: left;
@@ -39,8 +53,43 @@ header {
     background-color: white;
 }
 .menu li a:hover{
-    background-color: #724f83;
+    background-color: #c9c9c9;
+    color: #dd00ff;
 }
 .menu_container {
     background-color: white;
+}
+.menu .active{
+    color: #dd00ff;
+    text-shadow: 0px 0px 5px #dd00ff;
+}
+
+.main-block-container {
+    margin-top: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-block{
+    margin: auto;
+    width: 25%;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0px 5px 20px black;
+}
+
+.bottom-block {
+    margin-top: 300px;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 5px 20px black;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 5px 20px black;
 }
