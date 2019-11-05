@@ -143,3 +143,7 @@ textarea{
     border: 1px solid rgb(197, 197, 197);
     padding: 10px;
 }
+
+.contact-text{
+    margin-left: 10%;
+}
