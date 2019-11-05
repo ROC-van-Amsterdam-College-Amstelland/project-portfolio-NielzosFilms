@@ -21,17 +21,41 @@
             </ul><br><br></div></nav>
         </header>
         <main>
-            <div class="main-block-container">
-                <div class="contact-block" id="main-left">
+            <div class="main-block-container" style="margin-top: 100px;">
+                <div class="contact-block" id="main-left" style="height:550px">
+                    <h2>Adres</h2>
                 </div>
-                <div class="contact-block" id="main-right">
+                <div class="contact-block" id="main-right" style="height:550px">
+                    <h2>Contact</h2>
+                    <center><b style="color: #dd00ff;">nielzosfilms@gmail.com</b></center>
+                    <form>
+                        <center><input type="text" id="name" name="name" placeholder="Naam..."></center>
+                        <center><input type="text" id="email" name="email" placeholder="Email..."></center>
+                        <center><input type="text" id="subject" name="subject" placeholder="Onderwerp..."></center>
+                        <center><textarea id="body" name="body" placeholder="Inhoud..." style="height:200px"></textarea></center>
+                        <center><input type="submit" value="Submit" onclick="sendMail()"></center>
+                    </form>
                 </div>
-            </div>
-            <div class="bottom-block">
             </div>
         </main>
-        <footer>
+        <footer style="position:absolute;bottom:0;">
             <h1 class="company_name" style="padding:20px">NielzosFilms Software</h1>
         </footer>
+
+        <script>
+            function sendMail() {
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var subject = document.getElementById('subject').value;
+                var body = document.getElementById('body').value;
+                var link = "mailto:nielzosfilms@gmail.com"
+                        + "?cc="+email
+                        + "&subject=" + escape(subject)
+                        + "&body=" + escape(name+ " | "+body)
+                ;
+
+                window.location.href = link;
+            }
+        </script>
     </body>
 </html>
