@@ -204,3 +204,12 @@ progress{
     margin-left: auto;
     margin-right: auto;
 }
+
+a{
+    color: #dd00ff;
+}
+.nieuwslinks {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
