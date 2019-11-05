@@ -150,7 +150,7 @@ textarea{
 }
 
 .overmij-block{
-    text-align: center;
+    position: relative;
     margin: auto;
     width: 25%;
     height: 300px;
@@ -175,6 +175,7 @@ textarea{
 
 
 .index-block{
+    position: relative;
     margin: auto;
     width: 25%;
     height: 300px;
