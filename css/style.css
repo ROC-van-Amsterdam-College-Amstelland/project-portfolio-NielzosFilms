@@ -116,6 +116,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 footer {
+    position: relative;
     margin-top: 100px;
     background-color: white;
     width: 100%;
@@ -213,4 +214,12 @@ a{
     position: absolute;
     bottom: 0;
     padding: 10px;
+}
+
+.datetext{
+    padding: 10px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    margin-bottom: 15px;
 }
