@@ -223,3 +223,11 @@ a{
     bottom: 0;
     margin-bottom: 15px;
 }
+
+.footer-name{
+    padding: 10px;
+    position: absolute;
+    right:0;
+    bottom:0;
+    margin-bottom: 15px;
+}
